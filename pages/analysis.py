@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import matplotlib.pyplot as plt
+st.set_page_config(page_title='Analysis')
 
 def OnChange(actual:st.checkbox,other:st.checkbox):
     if actual:
@@ -10,15 +11,15 @@ def OnChange(actual:st.checkbox,other:st.checkbox):
 st.title('Data Analysis')
 
 data_state=st.text('loading data...')
-data=pd.read_pickle('../data/house_prices.pkl')
-clean_data = pd.read_pickle('../data/clean_housing_data.pkl')
+data=pd.read_pickle('/data/house_prices.pkl')
+clean_data = pd.read_pickle('/data/clean_housing_data.pkl')
 data_state.text('')
 
 
 st.header('Correlations')
 
 st.subheader('Correlation matrix')
-corelation = pd.read_pickle('../data/correlation_matrix.pkl')
+corelation = pd.read_pickle('/data/correlation_matrix.pkl')
 corelation
 
 st.subheader('Correlation heatmap')
