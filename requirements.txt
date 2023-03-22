@@ -78,6 +78,7 @@ smmap==5.0.0
 sqlparse==0.4.3
 streamlit==1.18.1
 tenacity==8.2.1
+tensorflow==2.11.0
 termcolor==2.2.0
 toml==0.10.2
 toolz==0.12.0
