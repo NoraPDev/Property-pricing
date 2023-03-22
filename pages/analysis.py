@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -10,16 +11,20 @@ def OnChange(actual:st.checkbox,other:st.checkbox):
 
 st.title('Data Analysis')
 
+house_prices_file = os.path.join(os.getcwd(), "data", "house_prices.pkl")
+clean_housing_file = os.path.join(os.getcwd(), "data", "clean_housing_data.pkl")
+correlation_matrix_file = os.path.join(os.getcwd(), "data", "correlation_matrix.pkl")
+
 data_state=st.text('loading data...')
-data=pd.read_pickle("house_prices.pkl")
-clean_data = pd.read_pickle('app/data/clean_housing_data.pkl')
+data=pd.read_pickle(house_prices_file)
+clean_data = pd.read_pickle(clean_housing_file)
 data_state.text('')
 
 
 st.header('Correlations')
 
 st.subheader('Correlation matrix')
-corelation = pd.read_pickle('app/data/correlation_matrix.pkl')
+corelation = pd.read_pickle(correlation_matrix_file)
 corelation
 
 st.subheader('Correlation heatmap')
