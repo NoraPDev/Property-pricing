@@ -15,5 +15,5 @@ xgboost
 yellowbrick
 Jinja2
 MarkupSafe
-protobuf
+protobuf==3.20.0
 ipywidgets
