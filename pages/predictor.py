@@ -20,7 +20,7 @@ sample=pd.read_pickle('data\clean_housing_data.pkl').sample(1)
 
 
 with st.form('form'):
-        st.write("House details")
+    st.write("House details")
     importatnt_inputs={}
     for f in features:
         if f not in st.session_state:
