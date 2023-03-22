@@ -11,13 +11,13 @@ st.title('Sales Price Prediction')
 with open('data\important_features.pkl','rb') as f:
     features=pickle.load(f)
 
-inhereted = pd.read_pickle('data\inhereted_houses_corr.pkl')[features]
-st.header('Inhereted houses')
-st.write(inhereted)
+inherited = pd.read_pickle('data\inherited_houses_corr.pkl')[features]
+st.header('Inherited houses')
+st.write(inherited)
 
 model = keras.models.load_model('data\Model')
-prediction=model.predict(inhereted)
-inhereted_with_prediction=pd.DataFrame(inhereted)
-inhereted_with_prediction['predicted SalePrice']=prediction
-st.header('Inhereted houses prediction')
-st.write(inhereted_with_prediction)
+prediction=model.predict(inherited)
+inherited_with_prediction=pd.DataFrame(inherited)
+inherited_with_prediction['predicted SalePrice']=prediction
+st.header('Inherited houses prediction')
+st.write(inherited_with_prediction)
