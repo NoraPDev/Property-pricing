@@ -1,7 +1,6 @@
 import os
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 import matplotlib.pyplot as plt
 
 def analysis_body():
@@ -30,7 +29,10 @@ def analysis_body():
 
     st.subheader('Correlation heatmap')
     corelation['SalePrice']+=1
-    corelation_hm=px.imshow(corelation,color_continuous_scale=px.colors.diverging.Portland)
+    fig,ax = plt.subplots()
+    ax.pcolormesh(corelation)
+    corelation_hm=st.pyplot(fig)
+
     corelation_hm
 
     st.subheader('Scatter plots of features with high correlation')
