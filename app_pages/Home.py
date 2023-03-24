@@ -1,5 +1,4 @@
 import streamlit as st
-import plotly.express as px
 import pickle
 
 def home_body():
