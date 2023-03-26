@@ -1,24 +1,37 @@
 # Property price predictor
 This repository is created as a solution of the Predictive Analytics - Portfolio Projects for the "Diploma in Full Stack Software Development" course held at Code Institute.
 
+### You can view the live site here - <a href="https://property-pricing.herokuapp.com//" target="_blank" rel="noopener">Property price predictor</a>
 
-## Click [here](https://property-pricing.herokuapp.com//) to live site.  
 
+## Table of contents
+1. [**Project Goals**](#project-goals)
+1. [**Business requirements**](#business-requirements)
+1. [**Mapping business requirements**](#mapping-business-requirements)
+1. [**User Interface**](#user-interface)
+1. [**Data**](#data)
+1. [**Machine Learning Pipeline**](#machine-learning-pipeline)
+1. [**Credits**](#credits)
+1. [**Technology Used**](#technology-used)
+1. [**Credits**](#credits)
 
-## Project goals
+## **Project Goals**
 The goal of the project is to develop an application based on a fictional scenario.
 ### The scenario
 An individual, Lydia Doe has inherited four houses in Ames, Iowa, USA. She has an excellent understanding of property prices, but her knowledge has a territorial bias, since she is not from the USA. She has ordered an analysis of the property values in Iowa based on data, she have gathered from the internet.
 ### Goals
 Lydia wants to maximize her profits from selling the properties she has inherited, and would like to acquire a better understanding of the contribution of the different features to the price of a given property. 
-## Stakeholders
+### Stakeholders
 The stakeholders of the project are the following:
 - **Lydia** The client
 - The developer
 
 The client can benefit from the delivered analysis, because it will highlight the important features of a property, and with this knowledge, she can maximize the profit on the selling of the inherited properties, and later she will be able to enter the real estate market of Ames more conveniently. Furthermore, she will be able to predict the prices of any given property in negligible time, which can easily give her an advantage over other market participants.
 
-## Business requirements - *Business Understanding*
+## **Business requirements** 
+
+### Business Understanding
+
 To deliver an application, that will satisfy the needs of the customer there is a need to make and fulfil requirements. In this project, the functional requirements are the following:
 - R1: The delivered analysis should contain the contribution of each feature to the price of the property
 - R2: The delivered application shall be able to predict house prices based on the value of features given by the user
@@ -33,32 +46,37 @@ Extra functional requirements are the following:
 Safety is not considered in the business requirements, since the application has no impact on the physical world.
 Security is not considered in the business requirements, since the application does not handle private data.
 
-## Mapping business requirements
+## **Mapping business requirements**
 ### R1:
-To satisfy this requirement we need to analyse the data in regard of the correlation between price and all other properties and choose the properties that show high correspondence. 
+To satisfy this requirement we need to analyse the data in regards of the correlation between price and all other properties and choose the properties that show high correspondence. 
 ### R2
 To satisfy this requirement we need to use some prediction method.
 ### Re1
 To satisfy this requirement we need to use a prediction method, which can make the prediction in minimal time. Machine Learning methods are known to be fast during prediction. Since the duration of development is long enough, it is not a problem, that the learning time of such methods is high. Considering the size of the data the learning will not take too much time.
-### Re2:
+### Re2
 To satisfy this requirement we need to build an application with GUI. For this I have chosen streamlit, since it is a framework I am familiar with, and it reduces development time. Furthermore Python data visualization tools can be integrated to it, and it can combine text with plots.
 ### Re3
 To satisfy this requirement I will use streamlit’s paging tool.
-## User Interface
+
+## **User Interface**
 The streamlit user face consists the following pages:
 - Home
 - Analysis
 - Prediction
 - Predictor
 ### Home
-Overview of the project
+* Overview of the project.
+* Describe project dataset.
+* State business requirements.
+
 ### Analysis
 Results of the data analysis
 ### Prediction
 Prediction for the inherited properties
 ### Predictor
 A form used for new predictions
-## Data
+
+## **Data**
 Scenario wise the data is provided to us by the client, who has found it on the internet. The dataset is available at [Kaggle](https://www.kaggle.com/datasets/codeinstitute/housing-prices-data)
 ### Data Description
 |Variable|Meaning|Units|
@@ -87,7 +105,8 @@ Scenario wise the data is provided to us by the client, who has found it on the 
 |YearBuilt|Original construction date|1872 - 2010 - (Min - Max > Year Built)|
 |YearRemodAdd|Remodel date (same as construction date if no remodelling or additions)|1950 - 2010 - (Min - Max > Remodel Year)|
 |SalePrice|Sale Price|34.900 - 755.000 - (Min - Max > Sale price in $)|
-## Machine Learning Pipeline
+
+## **Machine Learning Pipeline**
 ### Preliminary data analysis
 In this phase, the data is analysed in regard of the following aspects:
 - Each features correspondence to the price
@@ -117,7 +136,7 @@ on the training set:
 
 ![img](./docs/images/train_act_pred.png)
 
-## Credit
+## **Credits**
 
 * I would like to say thank you to my mentor, Marcel , for being patient and helpful throughout the whole project.
 * Also would like to say thank you to my tutor, Szabolcs Weyde, who explained to me the ins and outs of Data Analytics. 
