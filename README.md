@@ -1,5 +1,10 @@
 # Property price predictor
-This repository is created as a solution of the Predictive Analytics - Portfolio Projects for the "Diploma in Full Stack Software Development" course held at Code Institute
+This repository is created as a solution of the Predictive Analytics - Portfolio Projects for the "Diploma in Full Stack Software Development" course held at Code Institute.
+
+
+## Click [here](https://property-pricing.herokuapp.com//) to live site.  
+
+
 ## Project goals
 The goal of the project is to develop an application based on a fictional scenario.
 ### The scenario
