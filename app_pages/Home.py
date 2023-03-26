@@ -1,8 +1,14 @@
+import os
 import streamlit as st
 import plotly.express as px
 import pickle
 
 def home_body():
+    Y_test_prediction_file = os.path.join(os.getcwd(), "data", "Y_test_prediction.pkl")
+    Y_train_prediction_file = os.path.join(os.getcwd(), "data", "Y_train_prediction.pkl")
+    Y_test_file = os.path.join(os.getcwd(), "data", "Y_test.pkl")
+    Y_train_file = os.path.join(os.getcwd(), "data", "Y_train.pkl")
+
     st.title('Data Analytics Project')
 
     st.header('Project overview')
@@ -13,20 +19,19 @@ def home_body():
     st.subheader('Results')
 
 
-
-    with open('data\Y_test_prediction.pkl','rb') as f:
+    with open(Y_test_prediction_file,'rb') as f:
         Y_test_prediction=pickle.load(f)
         f.close()
 
-    with open('data\Y_train_prediction.pkl','rb') as f:
+    with open(Y_train_prediction_file,'rb') as f:
         Y_train_prediction=pickle.load(f)
         f.close()
         
-    with open('data\Y_test.pkl','rb') as f:
+    with open(Y_test_file,'rb') as f:
         Y_test=pickle.load(f)
         f.close()
         
-    with open('data\Y_train.pkl','rb') as f:
+    with open(Y_train_file,'rb') as f:
         Y_train=pickle.load(f)
         f.close()
 
@@ -62,7 +67,8 @@ def home_body():
     )
     fig
 
-    with open('data\\r2_scores.pkl','rb') as f:
+    r2_scores_file = os.path.join(os.getcwd(), "data", "r2_scores.pkl")
+    with open(r2_scores_file,'rb') as f:
         r2_scores=pickle.load(f)
         f.close()
 
