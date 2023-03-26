@@ -1,6 +1,8 @@
 # Property price predictor
 This repository is created as a solution of the Predictive Analytics - Portfolio Projects for the "Diploma in Full Stack Software Development" course held at Code Institute.
 
+![Price predictor](./docs/images/responsive_screenshots.jpg)
+
 ### You can view the live site here - <a href="https://property-pricing.herokuapp.com//" target="_blank" rel="noopener">Property price predictor</a>
 
 
