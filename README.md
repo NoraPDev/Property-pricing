@@ -146,7 +146,9 @@ In this phase, the data is analysed in regard of the following aspects:
 - Each features correspondence to the price
 - Missing data fields
 - Outliers
-After the analysis the properties with low correspondence have been removed from the dataset. A column with low correspondence was removed, because it contained a huge amount of missing data. In this case various replacement was considered and implemented, none of them have increased the accuracy of the results. Records that had missing values after removing the column were disposed. Outliers have been removed.
+
+After the analysis, the properties with low correspondence have been removed from the dataset. A column with low correspondence was removed, because it contained a huge amount of missing data. In this case various replacement was considered and implemented, none of them have increased the accuracy of the results. Records, that had missing values after removing the column, were disposed. Outliers have been removed.
+
 ### Training Phase
 #### Data Preparation
 The data had been split up. First the target variable had been separated from the features, and after that the data was split into train and test sets.
