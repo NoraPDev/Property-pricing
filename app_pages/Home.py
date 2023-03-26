@@ -13,9 +13,9 @@ def home_body():
 
     st.header('Project overview')
     st.subheader('Project goals')
-    st.markdown('The goal of this project is to create an analysis for an imaginary client in which the house prices and the correlation of the house features is analised, and to predict the prices of houses inherited by the client')
+    st.markdown('The goal of this project is to create an analysis for an imaginary client in which the house prices and the correlation of the house features is analysed, and to predict the prices of houses inherited by the client')
     st.subheader('The solution')
-    st.markdown('My solution for the problem is to gather, analyse and clean the data. After that I have defined and implemetned a neural netwrok based machine learning model. I have trained the model on a subset of the cleaned data and tested it on the remained data')
+    st.markdown('My solution for the problem is to gather, analyse and clean the data. After that I have defined and implemented a neural network based machine learning model. I have trained the model on a subset of the cleaned data and tested it on the remained data')
     st.subheader('Results')
 
 
@@ -74,3 +74,5 @@ def home_body():
 
     st.markdown(f'R2 on test set: {r2_scores[0]}')
     st.markdown(f'R2 on train set: {r2_scores[1]}')
+
+    st.markdown('These ratings demonstrate the validity and reliability of the ML model findings.')
