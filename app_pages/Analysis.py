@@ -1,9 +1,6 @@
 import os
-from turtle import color
-from numpy import size
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 import matplotlib.pyplot as plt
 
 def analysis_body():
