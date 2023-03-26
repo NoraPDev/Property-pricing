@@ -11,7 +11,6 @@ This repository is created as a solution of the Predictive Analytics - Portfolio
 1. [**User Interface**](#user-interface)
 1. [**Data**](#data)
 1. [**Machine Learning Pipeline**](#machine-learning-pipeline)
-1. [**Credits**](#credits)
 1. [**Technology Used**](#technology-used)
 1. [**Credits**](#credits)
 
@@ -28,6 +27,14 @@ The stakeholders of the project are the following:
 
 The client can benefit from the delivered analysis, because it will highlight the important features of a property, and with this knowledge, she can maximize the profit on the selling of the inherited properties, and later she will be able to enter the real estate market of Ames more conveniently. Furthermore, she will be able to predict the prices of any given property in negligible time, which can easily give her an advantage over other market participants.
 
+### User Stories
+
+1. As a user, I want to have access to detailed information about house attributes and sales prices in Ames, Iowa so that I can make informed decisions. 
+2. As a user, I want to have access to all the requested information in an organised and user-friendly dashboard so that I can quickly identify any potential issues.
+3. As a user, I want to be able to customize the visualisations of the house attributes and sales prices so that I can make more informed decisions.
+4. As a user, I want to be able to see predicted prices for properties based on different attributes so that I can understand the market better.
+
+
 ## **Business requirements** 
 
 ### Business Understanding
@@ -42,6 +49,7 @@ Extra functional requirements are the following:
   - Re2.1: The application shall visualize the results of the analysis via plots
   - Re2.2: The application shall describe the results of the analysis via text
 - Re3: The application interface shall not contain more than ten plots on one page 
+- Re4: The model must exceed R2 score of 80.
 
 Safety is not considered in the business requirements, since the application has no impact on the physical world.
 Security is not considered in the business requirements, since the application does not handle private data.
@@ -70,11 +78,15 @@ The streamlit user face consists the following pages:
 * State business requirements.
 
 ### Analysis
-Results of the data analysis
+* Results of the data analysis.
+
 ### Prediction
-Prediction for the inherited properties
+* Prediction for the inherited properties
+
 ### Predictor
-A form used for new predictions
+* A form used for new predictions, based on input added by user.
+
+Correlation Heatmap: shows the correlation between all the columns with each other
 
 ## **Data**
 Scenario wise the data is provided to us by the client, who has found it on the internet. The dataset is available at [Kaggle](https://www.kaggle.com/datasets/codeinstitute/housing-prices-data)
@@ -135,6 +147,19 @@ on the test set:
 on the training set:
 
 ![img](./docs/images/train_act_pred.png)
+
+## **Technology Used**
+
+* Python
+* Y-data
+* Pandas
+* Matplotlib
+* Scikit-learn
+* Tensorflow
+* Streamlit
+* Jupyter Notebook
+* Git/GitHub
+
 
 ## **Credits**
 
