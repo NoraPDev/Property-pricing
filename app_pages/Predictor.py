@@ -1,16 +1,22 @@
+import os
 import streamlit as st
 import pandas as pd
-from tensorflow import keras
+import tensorflow as tf
 import pickle
 
+
 def predictor_body():
-    with open('data\important_features.pkl','rb') as f:
+    important_features_file = os.path.join(os.getcwd(), "data", "important_features.pkl")
+    model_folder = os.path.join(os.getcwd(), "data", "Model")
+    clean_housing_data_file = os.path.join(os.getcwd(), "data", "clean_housing_data.pkl")
+
+    with open(important_features_file,'rb') as f:
         features=pickle.load(f)
 
     formdata=pd.DataFrame()
 
 
-    sample=pd.read_pickle('data\clean_housing_data.pkl').sample(1)
+    sample=pd.read_pickle(clean_housing_data_file).sample(1)
 
 
 
@@ -26,7 +32,8 @@ def predictor_body():
                 importatnt_inputs[f]=st.number_input(f,value=st.session_state[f])
         
         inputs=importatnt_inputs
-        model = keras.models.load_model('data\Model')
+        model = tf.keras.models.load_model(model_folder, compile=False)
+        model.compile(optimizer='adam',loss='mse',metrics=['mae'])
         submitted = st.form_submit_button("Submit")
         if submitted:
             formdata=pd.DataFrame(importatnt_inputs,index=[1])
