@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 import pandas as pd
-from tensorflow import keras
+import tensorflow as tf
 import pickle
 
 def prediction_body():
@@ -17,8 +17,8 @@ def prediction_body():
     st.header('Inherited houses')
     st.write(inherited)
     
-    model = keras.models.load_model(model_folder)
-   
+    model = tf.keras.models.load_model(model_folder, compile=False)
+    model.compile(optimizer='adam',loss='mse',metrics=['mae'])
     prediction=model.predict(inherited)
     inherited_with_prediction=pd.DataFrame(inherited)
     inherited_with_prediction['predicted SalePrice']=prediction
