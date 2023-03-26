@@ -89,9 +89,11 @@ The streamlit user face consists the following pages:
 ![Analysis](./docs/images/analysis.jpg)
 
 * Correlation heatmap: shows the correlation between all the columns with each other
+
 ![Correlation Heatmap](./docs/images/correlation_heatmap.png)
 
 * Scatter plots of features with high correlation, for example:
+
 ![1stFloorSf](./docs/images/first_floor_sf.jpg)
 ![Garage Area](./docs/images/garage_area.jpg)
 ![Year Built](./docs/images/year_built.jpg)
