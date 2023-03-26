@@ -79,6 +79,7 @@ The streamlit user face consists the following pages:
 * Overview of the project.
 * Describe project dataset.
 * State business requirements.
+* Results on R2
 
 ![Home](./docs/images/home.jpg)
 
@@ -86,6 +87,15 @@ The streamlit user face consists the following pages:
 * Results of the data analysis.
 
 ![Analysis](./docs/images/analysis.jpg)
+
+* Correlation heatmap: shows the correlation between all the columns with each other
+![Correlation Heatmap](./docs/images/correlation_heatmap.png)
+
+* Scatter plots of features with high correlation, for example:
+![1stFloorSf](./docs/images/first_floor_sf.jpg)
+![Garage Area](./docs/images/garage_area.jpg)
+![Year Built](./docs/images/year_built.jpg)
+
 
 ### Prediction
 * Prediction for the inherited properties
@@ -97,7 +107,6 @@ The streamlit user face consists the following pages:
 
 ![Predictor](./docs/images/predictor.jpg)
 
-Correlation Heatmap: shows the correlation between all the columns with each other
 
 ## **Data**
 Scenario wise the data is provided to us by the client, who has found it on the internet. The dataset is available at [Kaggle](https://www.kaggle.com/datasets/codeinstitute/housing-prices-data)
@@ -158,6 +167,8 @@ on the test set:
 on the training set:
 
 ![img](./docs/images/train_act_pred.png)
+
+
 
 ## **Technology Used**
 
