@@ -112,3 +112,9 @@ on the training set:
 
 ![img](./docs/images/train_act_pred.png)
 
+## Credit
+
+* I would like to say thank you to my mentor, Marcel , for being patient and helpful throughout the whole project.
+* Also would like to say thank you to my tutor, Szabolcs Weyde, who explained to me the ins and outs of Data Analytics. 
+* I have had some inspiration from [Van-essa](https://github.com/van-essa/heritage-housing-issues#readme) and [Vasi](https://github.com/Vasi012/PP5-Predictive-Analysis).
+
