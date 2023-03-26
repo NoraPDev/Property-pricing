@@ -183,7 +183,14 @@ on the training set:
 
 ## **Credits**
 
-* I would like to say thank you to my mentor, Marcel , for being patient and helpful throughout the whole project.
-* Also would like to say thank you to my tutor, Szabolcs Weyde, who explained to me the ins and outs of Data Analytics. 
+### Online resources
+* Code Institute's learning material on [Predictive Analytics](https://codeinstitute.net/se/)
+* [Kaggle](https://www.kaggle.com/datasets/codeinstitute/housing-prices-data) provided the dataset used in this project 
 * I have had some inspiration from [Van-essa](https://github.com/van-essa/heritage-housing-issues#readme) and [Vasi](https://github.com/Vasi012/PP5-Predictive-Analysis).
+
+### Acknowledgement
+
+* I would like to say thank you to my mentor, Marcel, for being patient and helpful throughout the whole project.
+* Also would like to say thank you to my tutor, Szabolcs Weyde, who explained to me the ins and outs of Data Analytics. 
+
 
