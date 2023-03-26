@@ -12,6 +12,7 @@ This repository is created as a solution of the Predictive Analytics - Portfolio
 1. [**Data**](#data)
 1. [**Machine Learning Pipeline**](#machine-learning-pipeline)
 1. [**Technology Used**](#technology-used)
+1. [**Deployment To Heroku**](#deployment-to-heroku)
 1. [**Credits**](#credits)
 
 ## **Project Goals**
@@ -77,14 +78,22 @@ The streamlit user face consists the following pages:
 * Describe project dataset.
 * State business requirements.
 
+![Home](./docs/images/home.jpg)
+
 ### Analysis
 * Results of the data analysis.
+
+![Analysis](./docs/images/analysis.jpg)
 
 ### Prediction
 * Prediction for the inherited properties
 
+![Prediction](./docs/images/prediction.jpg)
+
 ### Predictor
 * A form used for new predictions, based on input added by user.
+
+![Predictor](./docs/images/predictor.jpg)
 
 Correlation Heatmap: shows the correlation between all the columns with each other
 
@@ -159,6 +168,17 @@ on the training set:
 * Streamlit
 * Jupyter Notebook
 * Git/GitHub
+
+## **Deployment To Heroku**
+
+- The App live link is: [HERE!](https://property-pricing.herokuapp.com/)
+- The project was deployed to Heroku using the following steps.
+1. Log in to Heroku and create an App
+2. At the Deploy tab, select GitHub as the deployment method.
+3. Select your repository name and click Search. Once it is found, click Connect.
+4. Select the branch you want to deploy, then click Deploy Branch.
+5. The deployment process should happen smoothly in case all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
+
 
 
 ## **Credits**
