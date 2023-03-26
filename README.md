@@ -8,6 +8,7 @@ This repository is created as a solution of the Predictive Analytics - Portfolio
 
 ## Table of contents
 1. [**Project Goals**](#project-goals)
+1. [**CRISP-DM Stages in this project**](#crisp-dm-stages-in-this-project)
 1. [**Business requirements**](#business-requirements)
 1. [**Mapping business requirements**](#mapping-business-requirements)
 1. [**User Interface**](#user-interface)
@@ -37,6 +38,30 @@ The client can benefit from the delivered analysis, because it will highlight th
 3. As a user, I want to be able to customize the visualisations of the house attributes and sales prices so that I can make more informed decisions.
 4. As a user, I want to be able to see predicted prices for properties based on different attributes so that I can understand the market better.
 
+## **CRISP-DM Stages in this project**
+
+
+![CRISP-DM Stages](./docs/images/CRISP-DM.png)
+
+Below I will explain the different stages of CRISP-DM and how it is applied in the current project:
+
+1. **Business Understanding**: This stage involves understanding the project objectives, understanding the data, and understanding the environment. The goal is to gain an understanding of the project scope and the data available.
+- Lydia needs help if she is to maximize the sales price for the inherited properties. She decides to ask a Data Practitioner for help.
+
+2. **Data Understanding**: This stage involves exploring and visualizing the data, identifying data quality issues, and creating a data dictionary. The goal is to identify patterns and relationships in the data that can be used to improve the project.
+* From searching the Internet, Lydia found a public dataset with house prices for Ames, Iowa, and will provide us with that. 
+
+3. **Data Preparation**: This stage involves transforming the data into a format that can be used for modeling, cleaning the data, and creating variables. The goal is to prepare the data for modeling.
+* The client is interested in discovering how the house attributes correlate with the sale price. 
+
+4. **Modeling**: This stage involves building and validating predictive models. The goal is to create models that can accurately predict the outcome of a problem.
+* Build a Data Web App to predict the sales price from the four houses based on the house attributes.
+
+5. **Evaluation**: This stage involves assessing the performance of the models and selecting the best model. The goal is to select the model with the highest accuracy.
+* The client expects data visualizations of the correlated variables against the sale price to show that.
+
+6. **Deployment**: This stage involves deploying the model into a production environment
+* Deliver a dashboard that meets the above requirements.
 
 ## **Business requirements** 
 
@@ -58,7 +83,7 @@ Safety is not considered in the business requirements, since the application has
 Security is not considered in the business requirements, since the application does not handle private data.
 
 ## **Mapping business requirements**
-### R1:
+### R1
 To satisfy this requirement we need to analyse the data in regards of the correlation between price and all other properties and choose the properties that show high correspondence. 
 ### R2
 To satisfy this requirement we need to use some prediction method.
@@ -203,7 +228,8 @@ on the training set:
 ### Online resources
 * Code Institute's learning material on [Predictive Analytics](https://codeinstitute.net/se/)
 * [Kaggle](https://www.kaggle.com/datasets/codeinstitute/housing-prices-data) provided the dataset used in this project 
-* I have had some inspiration from [Van-essa](https://github.com/van-essa/heritage-housing-issues#readme) and [Vasi](https://github.com/Vasi012/PP5-Predictive-Analysis).
+* I have had some inspiration from [Van-essa](https://github.com/van-essa/heritage-housing-issues#readme) and [Vasi](https://github.com/Vasi012/PP5-Predictive-Analysis)
+* CRISP-DM image and background info is from [Wikipedia](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining)
 
 ### Acknowledgement
 
