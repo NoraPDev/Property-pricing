@@ -105,7 +105,7 @@ The streamlit user face consists the following pages:
 ![Prediction](./docs/images/prediction.jpg)
 
 ### Predictor
-* A form used for new predictions, based on input added by user.
+* A form used for new predictions, based on input provided by user.
 
 ![Predictor](./docs/images/predictor.jpg)
 
